@@ -334,8 +334,12 @@ textarea {
 /* service card */
 
 .service-card {
+  width: 25%;
   & hr {
     max-width: 80%;
+  }
+  & img {
+    width: 100%;
   }
 }
 
