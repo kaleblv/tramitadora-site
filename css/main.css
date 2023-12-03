@@ -13,8 +13,9 @@
 
 html {
   color: #222;
-  font-size: 1em;
-  line-height: 1.4;
+  line-height: 30px;
+  font-family: 'Figtree', sans-serif;
+  font-size: 20px;
 }
 
 /*
@@ -261,3 +262,75 @@ textarea {
   }
 }
 
+
+/* custom styles */
+
+.main-header, .hero, .company-wrapper, .about {
+  max-width: 1619px;
+  margin: 0 auto;
+}
+
+.main-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  padding: 64px 0;
+}
+
+.main-header .main-nav ul {
+  margin: 0;
+  padding: 0;
+}
+
+.main-header .main-nav ul li {
+  margin-right: 56px;
+}
+
+.main-header .main-nav ul li:last-child {
+  margin-right: 0;
+}
+
+.main-nav ul li {
+  display: inline-block;
+}
+
+.main-nav ul li a {
+  text-decoration: none;
+}
+
+.company-wrapper, .company-info-wrapper, .about {
+  display: flex;
+}
+
+.company-info-wrapper {
+  flex-direction: column;
+}
+
+
+/* image card */
+
+.about > * {
+  flex: 1;
+}
+
+.image-card {
+  padding: 56px 64px;
+  & h3 {
+    font-size: 30px;
+  }
+  & p {
+    font-size: 24px;
+  }
+}
+
+
+
+/* helper classes */
+
+.grey-bg {
+  background: rgba(217, 217, 217, 0.20);
+}
+
+.heading-font-size {
+  font-size: 45px
+}
