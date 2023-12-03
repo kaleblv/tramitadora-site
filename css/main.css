@@ -354,6 +354,10 @@ textarea {
     padding: 0;
     & li {
       list-style-type: none;
+      margin-bottom: 8px;
+    }
+    & li:last-child {
+      margin-bottom: 0;
     }
   }
 
@@ -362,17 +366,32 @@ textarea {
 .footer-main {
   background: #686058;
   padding: 80px 0;
+  & a {
+    color: #fff;
+    text-decoration: none;
+  }
 }
 
 .footer-main-wrapper {
   display: flex;
+  justify-content: space-between;
   & .footer-logo {
     margin-bottom: 32px;
   }
 }
 
-.footer-main-wrapper > * {
+.footer-left {
+  max-width: 285px;
+}
+
+.footer-right {
+  display: flex;
+  gap: 32px;
+}
+
+.footer-right > * {
   flex: 1;
+  width: 300px;
 }
 
 .footer-secondary {
@@ -382,6 +401,10 @@ textarea {
   & p {
     margin: 0;
   }
+}
+
+.facebook-logo {
+  margin-right: 24px;
 }
 
 /* helper classes */
