@@ -303,10 +303,16 @@ textarea {
 
 .main-nav ul li {
   display: inline-block;
+  & a.active {
+    border-bottom: 2px solid #F5333F;
+  }
 }
 
 .main-nav ul li a {
   text-decoration: none;
+  font-size: 18px;
+  font-weight: 400;
+  color: #313131;
 }
 
 .company-wrapper, .company-info-wrapper, .about, .service-list {
@@ -316,6 +322,58 @@ textarea {
 .company-info-wrapper {
   flex-direction: column;
 }
+
+/* hero section */
+
+.slider {
+  margin: 8px 0 82px;
+}
+
+.slider__control {
+  & button {
+    height: 80px;
+    width: 80px;
+    border: none;
+    margin: 0;
+  }
+  & .slider__control-backward {
+    background: #EFEDEA;
+  }
+  & .slider__control-forward {
+    background: #696158;
+    margin-left: -6px;
+  }
+  position: absolute;
+  left: 61px;
+  bottom: -40px;
+}
+
+.slider-wrapper {
+  width: 84%;
+  background: url(../img/slider-img-1.jpg) no-repeat center center;
+  min-height: 560px;
+  position: relative;
+}
+
+.slider__title-wrapper {
+  width: 62%;
+  min-height: 322px;
+  background: rgba(105, 97, 88, 0.40);
+  backdrop-filter: blur(8px);
+  position: absolute;
+  right: -259px;
+  top: 74px;
+  padding: 91px 0 0 46px;
+}
+
+.slider__title {
+  font-size: 56px;
+  color: #FFF;
+  line-height: 72px;
+  font-weight: 700;
+  margin: 0;
+}
+
 
 
 /* image card */
