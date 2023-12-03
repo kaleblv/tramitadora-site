@@ -265,7 +265,7 @@ textarea {
 
 /* custom styles */
 
-.main-header, .hero, .company-wrapper, .about {
+.main-header, .hero, .company-wrapper, .about, .footer-main-wrapper, .footer-secondary-wrapper {
   max-width: 1619px;
   margin: 0 auto;
 }
@@ -324,6 +324,49 @@ textarea {
 }
 
 
+/* footer */
+
+.main-footer {
+  color: #fff;
+  font-size: 14px;
+  line-height: 16px;
+
+  & h4 {
+    font-size: 18px;
+  }
+  & ul {
+    padding: 0;
+    & li {
+      list-style-type: none;
+    }
+  }
+
+}
+
+.footer-main {
+  background: #686058;
+  padding: 80px 0;
+}
+
+.footer-main-wrapper {
+  display: flex;
+  & .footer-logo {
+    margin-bottom: 32px;
+  }
+}
+
+.footer-main-wrapper > * {
+  flex: 1;
+}
+
+.footer-secondary {
+  background: #4E4C4A;
+  text-align: center;
+  padding: 24px 0;
+  & p {
+    margin: 0;
+  }
+}
 
 /* helper classes */
 
