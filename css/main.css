@@ -66,6 +66,11 @@ video {
   vertical-align: middle;
 }
 
+
+img {
+  width: 100%;
+}
+
 /*
  * Remove default fieldset styles.
  */
@@ -278,15 +283,16 @@ textarea {
 .service-agente-consignatario__wrapper,
 .other-services-wrapper,
 .map-wrapper {
-  max-width: 1619px;
+  max-width: 1683px;
   margin: 0 auto;
+  padding: 0 32px;
 }
 
 .main-header {
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
-  padding: 64px 0;
+  padding: 64px 32px;
 }
 
 .main-header .main-nav ul {
@@ -413,7 +419,7 @@ textarea {
 }
 
 .company-wrapper {
-  padding: 62px 0;
+  padding: 62px 32px;
 }
 
 .veritas-company-logo {
@@ -424,7 +430,7 @@ textarea {
 
 .about {
   gap: 32px;
-  padding: 104px 0;
+  padding: 104px 32px;
 }
 
 .about > * {
@@ -461,7 +467,7 @@ textarea {
 /* our services section */
 
 .service-wrapper {
-  padding: 64px 0;
+  padding: 64px 32px;
 }
 
 /* other services section */
@@ -472,7 +478,7 @@ textarea {
 }
 
 .other-services-wrapper {
-  padding: 104px 0;
+  padding: 104px 32px;
   & h2 {
     margin-top: 0;
   }
@@ -494,7 +500,7 @@ textarea {
 /* map section */
 
 .map-wrapper {
-  padding: 62px 0;
+  padding: 62px 32px;
 }
 
 
@@ -523,7 +529,7 @@ textarea {
 
 .footer-main {
   background: #686058;
-  padding: 80px 0;
+  padding: 80px 32px;
   & a {
     color: #fff;
     text-decoration: none;
@@ -555,14 +561,17 @@ textarea {
 .footer-secondary {
   background: #4E4C4A;
   text-align: center;
-  padding: 24px 0;
+  padding: 24px 32px;
   & p {
     margin: 0;
   }
 }
 
-.facebook-logo {
-  margin-right: 24px;
+.footer__social {
+  display: inline-block;
+  width: 34.523px;
+  height: 34.166px;  
+  margin-right: 10px;
 }
 
 /* services list section */
@@ -629,7 +638,7 @@ textarea {
   grid-template-rows: repeat(2, 1fr);
   grid-column-gap: 32px;
   grid-row-gap: 32px;
-  padding: 62px 0;
+  padding: 62px 32px;
 
 }
 .col-info-text-vertical { grid-area: 1 / 1 / 3 / 2; }
@@ -649,10 +658,18 @@ textarea {
   font-weight: 500;
   line-height: 50px; /* 111.111% */
   letter-spacing: 4.5px;
+  margin-bottom: 5px;
 }
 
-.subtitle-font-size {
+.subtitle-font {
   font-size: 25px;
+  margin-bottom: 56px;
+  margin-top: 5px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 50px;
+  letter-spacing: 2.5px;
+  text-transform: uppercase;
 }
 
 .text-align-center {
