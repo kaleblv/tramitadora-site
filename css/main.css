@@ -461,19 +461,21 @@ textarea {
     font-weight: 300;
     line-height: 30px;
   }
-
 }
 
 .about-1 {
   background: url(../img/about-img-1.jpg) no-repeat;
+  background-size: cover;
 }
 
 .about-2 {
   background: url(../img/about-img-2.jpg) no-repeat;
+  background-size: cover;
 }
 
 .about-3 {
   background: url(../img/about-img-3.jpg) no-repeat;
+  background-size: cover;
 }
 
 /* our services section */
@@ -742,6 +744,26 @@ textarea {
 
   .company-info-wrapper {
     margin-bottom: 72px;
+  }
+
+  /* about section */
+
+  .about {
+    flex-direction: column;
+  }
+
+  .image-card {
+    min-height: 300px;
+  }
+
+  /* service list */
+
+  .service-list {
+    flex-direction: column;
+  }
+
+  .service-card {
+    width: 100%;
   }
 
 }
