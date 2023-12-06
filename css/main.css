@@ -338,6 +338,10 @@ textarea {
   justify-content: space-between;
 }
 
+.company-info-wrapper, .company-img-wrapper {
+  width: 50%;
+}
+
 .slider {
   margin: 8px 0 82px;
 }
