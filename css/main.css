@@ -712,6 +712,38 @@ textarea {
     margin-right: 32px;
   }
 
+  /* hero section */
+  .slider-wrapper {
+    width: 100%;
+  }
+
+  .slider__title-wrapper {
+    right: 116px;
+    top: 55px;
+  }
+
+  .slider__title-wrapper::before {
+    background: transparent;
+  }
+
+  /* company section */
+
+  .company-wrapper {
+    flex-direction: column-reverse;
+    & .heading-font {
+      margin-top: 0;
+
+    }
+  }
+
+  .company-info-wrapper, .company-img-wrapper {
+    width: 100%;  
+  }
+
+  .company-info-wrapper {
+    margin-bottom: 72px;
+  }
+
 }
 
 /* Media query for mobile devices */
