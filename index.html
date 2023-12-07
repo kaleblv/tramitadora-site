@@ -2,10 +2,11 @@
 <html class="no-js" lang="es-MX">
 
 <head>
-  <meta charset="utf-8">
-  <title></title>
-  <meta name="description" content="">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="utf-8">
+  <title>Tramitadora</title>
+  <meta name="description" content="">
+ 
 
   <meta property="og:title" content="">
   <meta property="og:type" content="">
@@ -16,9 +17,10 @@
   <link rel="apple-touch-icon" href="icon.png">
   <!-- Place favicon.ico in the root directory -->
 
-  <link rel="stylesheet"href="https://fonts.googleapis.com/css?family=Figtree">
   <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet"href="https://fonts.googleapis.com/css?family=Figtree">
   <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@glidejs/glide@3.4.1/dist/css/glide.core.min.css">
 
   <meta name="theme-color" content="#fafafa">
 </head>
@@ -45,13 +47,17 @@
     <section class="hero">
         <div class="slider">
           <div class="slider-wrapper">
+            <video autoplay loop muted class="hero-video">
+              <source src="tramitadora-video.mp4" type="video/mp4">
+              Your browser does not support the video tag.
+            </video>
             <div class="slider__title-wrapper">
               <h1 class="slider__title">SERVICIOS <br> MARÍTIMOS, <br>LOGÍSTICOS & <br>PORTUARIOS</h1>
             </div>
-            <div class="slider__control">
+            <!-- <div class="slider__control">
               <button class="slider__control-backward"></button>
               <button class="slider__control-forward"></button>
-            </div>
+            </div> -->
           </div>
         </div>
     </section>
@@ -315,6 +321,18 @@
     ga('create', 'UA-XXXXX-Y', 'auto'); ga('set', 'anonymizeIp', true); ga('set', 'transport', 'beacon'); ga('send', 'pageview')
   </script>
   <script src="https://www.google-analytics.com/analytics.js" async></script>
+  <!-- Include Glide.js JS -->
+  <script src="https://cdn.jsdelivr.net/npm/@glidejs/glide@3.4.1/dist/glide.min.js"></script>
+  <script>
+      document.addEventListener('DOMContentLoaded', function () {
+          new Glide('.glide', {
+              type: 'carousel', // or 'slider'
+              startAt: 0, // Starting slide number (0-based index)
+              perView: 1, // Number of slides visible at once
+              autoplay: 5000, // Autoplay interval in milliseconds (set to 0 to disable)
+          }).mount();
+      });
+  </script>
 </body>
 
 </html>
