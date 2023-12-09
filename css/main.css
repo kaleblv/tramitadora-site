@@ -833,6 +833,10 @@ textarea {
   color: #96262C;
 }
 
+.long-word {
+  hyphens: auto;
+}
+
 /* Media query for tablets */
 @media (max-width: 768px) {
 
