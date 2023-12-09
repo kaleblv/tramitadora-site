@@ -686,6 +686,115 @@ textarea {
   }
 }
 
+/* map section */
+
+.map-wrapper {
+  position: relative;
+}
+
+.map__text-container {
+  color: #FFF;
+  position: absolute;
+  width: 20%;
+  bottom: 14%;
+  left: 8%;
+  border-left: 8px solid #E1251B;
+  padding-left: 32px;
+}
+
+.map__title {
+  font-size: 45px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 80px;
+  letter-spacing: 9.8px;
+  & .map__title-emphasis {
+    font-size: 98px;
+    margin: -7px;
+  }
+  margin: 0;
+}
+
+.map__text {
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.map__marker {
+  background: url(../img/map-marker.svg) no-repeat;
+  border: none;
+  height: 40px;
+  width: 40px;
+  position: absolute;
+}
+
+.marker_1 {
+  top: 9%;
+  left: 12%;
+}
+.marker_2 {
+  top: 31%;
+  left: 22%;
+}
+.marker_3 {
+  top: 50%;
+  right: 67%;
+}
+.marker_4 {
+  top: 35%;
+  right: 66%;
+}
+.marker_5 {
+  top: 48%;
+  right: 59%;
+}
+.marker_6 {
+  top: 69%;
+  right: 53%;
+}
+.marker_7 {
+  top: 74%;
+  right: 47%;
+}
+.marker_8 {
+  top: 78%;
+  right: 43%;
+}
+.marker_9 {
+  top: 67%;
+  right: 40%;
+}
+.marker_10 {
+  top: 52%;
+  right: 37%;
+}
+.marker_11 {
+  top: 58%;
+  right: 36%;
+}
+.marker_12 {
+  top: 65%;
+  right: 33%;
+}
+.marker_13 {
+  top: 71%;
+  right: 29%;
+}
+.marker_14 {
+  top: 71%;
+  right: 21%;
+}
+.marker_15 {
+  top: 68%;
+  right: 19%;
+}
+.marker_16 {
+  top: 58%;
+  right: 16%;
+}
+
 /* helper classes */
 
 .grey-bg {
@@ -822,11 +931,10 @@ textarea {
   /* services sections */
 
   .service-agente-consignatario__wrapper, 
-  .service-agencia-aduanal__wrapper,
   .service-maniobras__wrapper {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(3, 1fr);
+    grid-template-rows: 500px 250px 250px; 
     grid-column-gap: 32px;
     grid-row-gap: 32px;
     padding: 32px 32px;
@@ -840,7 +948,7 @@ textarea {
   .service-agencia-aduanal__wrapper {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(3, 1fr);   
+    grid-template-rows: 650px 250px 250px; 
     grid-column-gap: 32px;
     grid-row-gap: 32px;
     padding: 32px 32px;

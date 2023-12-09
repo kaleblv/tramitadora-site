@@ -22,7 +22,15 @@
   <link rel="stylesheet" href="css/main.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@glidejs/glide@3.4.1/dist/css/glide.core.min.css">
 
-  <meta name="theme-color" content="#fafafa">
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="manifest" href="/site.webmanifest">
+  <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+  <meta name="msapplication-TileColor" content="#da532c">
+  <meta name="theme-color" content="#ffffff">
 </head>
 
 <body>
@@ -262,6 +270,26 @@
     </section>
     <section class="map" id="map-section">
       <div class="map-wrapper">
+        <button class="map__marker marker_1" id="myButton"></button>
+        <button class="map__marker marker_2" id="myButton2"></button>
+        <button class="map__marker marker_3" id="myButton3"></button>
+        <button class="map__marker marker_4" id="myButton4"></button>
+        <button class="map__marker marker_5" id="myButton5"></button>
+        <button class="map__marker marker_6" id="myButton6"></button>
+        <button class="map__marker marker_7" id="myButton7"></button>
+        <button class="map__marker marker_8" id="myButton8"></button>
+        <button class="map__marker marker_9" id="myButton9"></button>
+        <button class="map__marker marker_10" id="myButton10"></button>
+        <button class="map__marker marker_11" id="myButton11"></button>
+        <button class="map__marker marker_12" id="myButton12"></button>
+        <button class="map__marker marker_13" id="myButton13"></button>
+        <button class="map__marker marker_14" id="myButton14"></button>        
+        <button class="map__marker marker_15" id="myButton15"></button>
+        <button class="map__marker marker_16" id="myButton16"></button>
+        <div class="map__text-container">
+          <h3 class="map__title">NUESTRA <br><span class="map__title-emphasis">RED</span></h3>
+          <p class="map__text">Contamos con una amplia red de sucursales ubicadas en los puertos mas importantes a lo largo de la República Mexicana para atender cualquier necesidad de nuestros clientes.</p>
+        </div>
         <img src="./img/map-bg.jpg" alt="">
       </div>
     </section>
@@ -332,6 +360,60 @@
               autoplay: 5000, // Autoplay interval in milliseconds (set to 0 to disable)
           }).mount();
       });
+  </script>
+  <script src="https://unpkg.com/@popperjs/core@2"></script>
+  <script src="https://unpkg.com/tippy.js@6"></script>
+  <script>
+    // With the above scripts loaded, you can call `tippy()` with a CSS
+    // selector and a `content` prop:
+    tippy('#myButton', {
+      content: 'My tooltip!',
+    });
+    tippy('#myButton2', {
+      content: 'My tooltip 2!',
+    });
+    tippy('#myButton3', {
+      content: 'My tooltip 3!',
+    });
+    tippy('#myButton4', {
+      content: 'My tooltip 4!',
+    });    
+    tippy('#myButton5', {
+      content: 'My tooltip 5!',
+    });
+    tippy('#myButton6', {
+      content: 'My tooltip 6!',
+    });    
+    tippy('#myButton7', {
+      content: 'My tooltip 7!',
+    });
+    tippy('#myButton8', {
+      content: 'My tooltip 8!',
+    });    
+    tippy('#myButton9', {
+      content: 'My tooltip 9!',
+    });
+    tippy('#myButton10', {
+      content: 'My tooltip 10!',
+    });    
+    tippy('#myButton11', {
+      content: 'My tooltip 11!',
+    });
+    tippy('#myButton12', {
+      content: 'My tooltip 12!',
+    });    
+    tippy('#myButton13', {
+      content: 'My tooltip 13!',
+    });
+    tippy('#myButton14', {
+      content: 'My tooltip 14!',
+    });    
+    tippy('#myButton15', {
+      content: 'My tooltip 15!',
+    });
+    tippy('#myButton16 ', {
+      content: 'My tooltip 16!',
+    });
   </script>
 </body>
 
