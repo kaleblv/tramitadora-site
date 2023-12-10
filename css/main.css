@@ -400,7 +400,7 @@ textarea {
   background: rgba(105, 97, 88, 0.40);
   backdrop-filter: blur(8px);
   position: absolute;
-  right: -259px;
+  right: -19%;
   top: 74px;
   padding: 91px 0 0 46px;
 }
@@ -833,6 +833,102 @@ textarea {
   hyphens: auto;
 }
 
+/* Media query for large screens*/
+
+@media (max-width: 1337px) {
+
+  /* hero */
+
+  .slider__title-wrapper::before {
+    content: "test";
+    width: 30%;
+    height: 8px;
+    background: #FFF;
+    color: transparent;
+    display: inline-block;
+    position: absolute;
+    bottom: 92px;
+    right: 0;
+  }
+
+  /* company section */
+
+  .company-img-wrapper {
+    margin-right: 32px;
+  }
+
+  /* our services section */
+
+  .service-wrapper {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-column-gap: 32px;
+    grid-row-gap: 32px;
+    }
+    
+    .col-service-title { grid-area: 1 / 1 / 2 / 3; }
+    .col-service-1 { grid-area: 2 / 1 / 3 / 2; }
+    .col-service-2 { grid-area: 2 / 2 / 3 / 3; }
+    .col-service-3 { grid-area: 3 / 1 / 4 / 2; }
+    .col-service-4 { grid-area: 3 / 2 / 4 / 3; }
+
+    .service-title__subtitle {
+      margin-left: 4.5%;
+    }
+
+  /* map */
+
+  .map__title {
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 48px;
+    letter-spacing: 9.8px;
+    margin: 0;
+    & .map__title-emphasis {
+      font-size: 69px;
+      margin-left: -2px;
+    }
+  }
+
+
+  /* footer */
+
+  .footer-right > * {
+    padding: 0 8px; 
+    width: 1662px;
+    width: auto;
+    & h4 { 
+      margin-top: 0;
+    }
+  }
+}
+
+
+/* Media query for large screens*/
+
+@media (max-width: 1248px) {
+
+  /* hero */
+
+  .main-nav {
+    max-width: none;
+    width: 50%;
+  }
+
+  .main-header .main-nav ul li {
+    margin-right: 2%;
+  }
+
+  .main-header .main-nav ul {
+    display: flex;
+    justify-content: space-between;
+  }
+
+
+}
+
 /* Media query for tablets */
 @media (max-width: 768px) {
 
@@ -847,6 +943,11 @@ textarea {
   }
   .main-header .main-nav ul li {
     margin-right: 32px;
+  }
+
+  .main-header__logo {
+    max-width: 470px;
+    height: auto;
   }
 
   /* hero section */
