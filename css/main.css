@@ -929,8 +929,9 @@ textarea {
 
 }
 
-/* Media query for tablets */
-@media (max-width: 768px) {
+/* Media query for large screens*/
+
+@media (max-width: 1091px) {
 
   /* header */
   .main-header {
@@ -950,6 +951,18 @@ textarea {
     height: auto;
   }
 
+  .main-nav {
+    width: 57%;
+  }
+
+
+}
+
+
+
+/* Media query for tablets */
+@media (max-width: 768px) {
+1
   /* hero section */
   .slider-wrapper {
     width: 100%;
