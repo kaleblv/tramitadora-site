@@ -939,10 +939,17 @@ textarea {
       display: flex;
       gap: 32px;
     }
-  
-    .footer-left > * {
-      flex: 1;
+
+    .footer-left {
+      & img  {
+        max-width: 304px;
+      }
+      & p {
+        max-width: 243px;
+      }
     }
+  
+
   
     .footer-right {
       gap: 66px;
@@ -1167,6 +1174,20 @@ textarea {
       line-height: 20px;
     }
   }
+
+}
+
+@media (max-width: 611px) {
+  .footer-left {
+    flex-direction: column;
+    align-items: center;
+  }
+  .footer-main-wrapper {
+    align-items: center;
+    text-align: center;
+
+  }
+
 
 }
 
