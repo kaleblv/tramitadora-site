@@ -954,15 +954,44 @@ textarea {
   .main-nav {
     width: 57%;
   }
+}
+
+/* Media query for medium screens*/
+
+@media (max-width: 980px) {
+
+
+  /* about section */
+  
+  .about {
+    flex-direction: column;
+  }
+
+  /* our services section */
+  .icon-card {
+    flex-direction: column;
+    & img {
+     border-right: none;
+     width: 25%;
+    }
+  }
+
+  .service-wrapper {
+    grid-template-rows: auto;
+  }
+
+
 
 
 }
 
 
 
+
+
 /* Media query for tablets */
 @media (max-width: 768px) {
-1
+
   /* hero section */
   .slider-wrapper {
     width: 100%;
