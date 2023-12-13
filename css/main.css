@@ -15,7 +15,8 @@ html {
   color: #222;
   line-height: 30px;
   font-family: 'Figtree', sans-serif;
-  font-size: 20px;
+  font-size: 1rem;
+  font-size: clamp(1.15rem, 0.95rem + 0.25vw, 1.25rem);
   scroll-behavior: smooth;
 }
 
@@ -294,6 +295,7 @@ textarea {
 .service-maniobras__wrapper,
 .service-agente-consignatario__wrapper,
 .other-services-wrapper,
+.map__text-container-outer,
 .map-wrapper {
   max-width: 1683px;
   margin: 0 auto;
@@ -685,6 +687,10 @@ textarea {
 
 /* map section */
 
+.map__text-container-outer {
+  display: none;
+}
+
 .map-wrapper {
   position: relative;
 }
@@ -940,6 +946,13 @@ textarea {
   }
 
 
+  .map__text-container {
+    width: 25%;
+    bottom: 12%;
+    left: 5%;
+  }
+
+
 }
 
 
@@ -971,6 +984,10 @@ textarea {
     .footer-main-wrapper {
       flex-direction: column;
       gap: 32px;
+    }
+
+    .map__text-container {
+      width: 33%;
     }
 }
 
@@ -1031,6 +1048,16 @@ textarea {
 
   .service-wrapper {
     grid-template-rows: auto;
+  }
+
+  /* map section */
+
+  .map__text-container-outer {
+    display: block;
+  }
+
+  .map__text-container {
+    display: none;
   }
 
 
@@ -1236,5 +1263,15 @@ textarea {
     display: flex;
     flex-direction: column;
   }
+
+  .service-agencia-aduanal__wrapper,
+  .service-agente-consignatario__wrapper, 
+  .service-maniobras__wrapper {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    grid-column-gap: 1px;
+    grid-row-gap: 32px;
+  } 
 
 }
