@@ -1206,8 +1206,8 @@ textarea {
 
   .service-wrapper {
     display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: repeat(5, 1fr); 
+    grid-template-columns: auto;
+    grid-template-rows: auto; 
     grid-column-gap: 32px;
     grid-row-gap: 32px;
   }
@@ -1222,6 +1222,8 @@ textarea {
     width: 80%;
     & img {
       height: 100%;
+      width: 50%;
+      max-width: 150px;
     }
   }
 
@@ -1335,6 +1337,51 @@ textarea {
     width: 15px;
     background-size: contain;
   }
+
+  .marker_1 {
+    top: 17%;
+    left: 15%;
+  }
+
+  .marker_2 {
+    top: 36%;
+    left: 24%;
+  }
+
+  .marker_6 {
+    top: 65%;
+    right: 52%;
+  }
+
+  .marker_7 {
+    top: 71%;
+    right: 44%;
+  }
+
+  .marker_8 {
+    top: 73%;
+    right: 41%;
+  }
+
+  .marker_9 {
+    top: 64%;
+    right: 40%;
+  }
+
+  .marker_14 {
+    top: 66%;
+    right: 22%;
+  }
+
+  .marker_15 {
+    top: 63%;
+    right: 20%;
+  }
+
+  .marker_16 {
+    top: 57%;
+    right: 17%;
+  }
 }
 
 /* Media query for mobile devices */
@@ -1364,5 +1411,102 @@ textarea {
     grid-column-gap: 1px;
     grid-row-gap: 32px;
   } 
+
+}
+
+/* Media query for small mobile devices */
+@media (max-width: 360px) {
+
+  /* hero */
+
+  .slider-wrapper {
+    min-height: 331px;
+  }
+
+  .slider__title-wrapper {
+    right: 6px;
+    top: 48px;
+    width: 85%;
+    min-height: 222px;
+    padding: 16px;
+  }
+
+  .slider__title {
+    font-size: 30px;
+    color: #FFF;
+    line-height: 50px;
+    font-weight: 700;
+    margin: 0;
+  }
+
+  /* map section */
+
+  .marker_1 {
+    top: 23%;
+    left: 18%;
+  }
+
+  .marker_3 {
+    top: 49%;
+    right: 65%;
+  }
+
+  .marker_6 {
+    top: 61%;
+    right: 51%;
+  }
+
+  .marker_9 {
+    top: 60%;
+    right: 40%;
+  }
+
+  .marker_7 {
+    top: 65%;
+    right: 45%;
+  }
+
+  .marker_8 {
+    top: 67%;
+    right: 41%;
+  }
+  
+  .marker_16 {
+    top: 53%;
+    right: 17%;
+  }
+
+  .marker_15 {
+    top: 57%;
+    right: 20%;
+  }
+
+  .marker_14 {
+    top: 61%;
+    right: 24%;
+  }
+
+  .marker_10 {
+    top: 47%;
+    right: 38%;
+  }
+
+  .marker_11 {
+    top: 55%;
+    right: 36%;
+  }
+
+  .marker_12 {
+    top: 60%;
+    right: 33%;
+  }
+
+  .marker_13 {
+    top: 63%;
+    right: 29%;
+  }
+
+
+  
 
 }
