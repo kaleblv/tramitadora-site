@@ -335,9 +335,9 @@ textarea {
 .main-nav ul li {
  display: inline-block;
  list-style: none;
-  & a:hover {
+  /* & a:hover {
     border-bottom: 2px solid #F5333F;
-  }
+  } */
 }
 
 .main-nav ul li a {
@@ -345,6 +345,26 @@ textarea {
   font-size: 18px;
   font-weight: 400;
   color: #313131;
+  display: inline-block;
+  padding: 0;
+  position: relative;
+}
+
+.main-nav ul li a:after {    
+  background: none repeat scroll 0 0 transparent;
+  bottom: 0;
+  content: "";
+  display: block;
+  height: 2px;
+  left: 50%;
+  position: absolute;
+  background: #F5333F;
+  transition: width 0.3s ease 0s, left 0.3s ease 0s;
+  width: 0;
+}
+.main-nav ul li a:hover:after { 
+  width: 100%; 
+  left: 0; 
 }
 
 .company-wrapper, .company-info-wrapper, .about, .service-list {
